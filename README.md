@@ -1,6 +1,6 @@
 # S18_Blackbaud
 
-Files relevant to blackbaud fraudulent activity project.
+Files relevant to clemson Capstone Blackbaud fraudulent activity project. 
 
 ## AngularD3
 
@@ -9,3 +9,6 @@ UI starting template to eventually display fraudulent activity results using Ang
 ## R
 
 Tool to visualize database values
+
+## Collaboration Statement
+This was a group project and built by three other students 
