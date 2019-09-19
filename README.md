@@ -11,4 +11,4 @@ UI starting template to eventually display fraudulent activity results using Ang
 Tool to visualize database values
 
 ## Collaboration Statement
-This was a group project and built by three other students 
+This was a group project and built together by three other students along with me
