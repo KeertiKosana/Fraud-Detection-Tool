@@ -1,0 +1,47 @@
+[
+    {
+        "USERSID": 1,
+        "NAME": "Supervisor",
+        "DESCRIPTION": "Supervisor Account"
+    },
+    {
+        "USERSID": 8,
+        "NAME": "Carol",
+        "DESCRIPTION": "Accounting"
+    },
+    {
+        "USERSID": 9,
+        "NAME": "tsmith",
+        "DESCRIPTION": "Donna's Assistant"
+    },
+    {
+        "USERSID": 12,
+        "NAME": "sdenaux",
+        "DESCRIPTION": "Executive Director"
+    },
+    {
+        "USERSID": 13,
+        "NAME": "vortia",
+        "DESCRIPTION": "Finance assistant"
+    },
+    {
+        "USERSID": 26,
+        "NAME": "Anna Hughes",
+        "DESCRIPTION": "Accounts Payable"
+    },
+    {
+        "USERSID": 27,
+        "NAME": "Melissa Snyder",
+        "DESCRIPTION": "Melissa Snyder"
+    },
+    {
+        "USERSID": 28,
+        "NAME": "Kirsten Cauthen",
+        "DESCRIPTION": "Accounts Payable"
+    },
+    {
+        "USERSID": 31,
+        "NAME": "jrenglish",
+        "DESCRIPTION": "Help"
+    }
+]

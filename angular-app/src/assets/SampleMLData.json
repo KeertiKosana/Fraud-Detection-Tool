@@ -1,0 +1,23 @@
+{
+    "name": "K-Means",
+    "data": [
+        {
+            "id": 1,
+            "userID": 1,
+            "AP7INVOICESID": 1,
+            "CHECKS7ID": 1,
+            "PaymentAmount": 824.99,
+            "CheckAddedbyID": 1,
+            "InvoiceAddedbyID": 1,
+            "PAYMENTMETHOD": 1,
+            "DeltaTime": 45442.7268,
+            "HOD": 10,
+            "DOW_num": 4,
+            "DOW_str": "Thursday",
+            "cluster": 2,
+            "outlier": 0,
+            "xCoord": 0.6376,
+            "yCoord": 0.9256
+        }
+    ]
+}

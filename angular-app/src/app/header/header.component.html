@@ -1,0 +1,26 @@
+<div class="text-center">
+  <h1>{{ title }}</h1>
+  <sky-row>
+
+    <sky-column screenSmall="1" screenLarge="3">
+    </sky-column>
+
+    <sky-column screenSmall="5" screenLarge="3">
+      <label for="select-user" class="control-label required">Select user:</label>
+      <select id="select-user" name="select-user" [(ngModel)]="selectedUser" (ngModelChange)="broadcastSelection()">
+        <option *ngFor="let UserData of UsersData" [ngValue]="UserData">{{ UserData.NAME }} </option>
+      </select>
+    </sky-column>
+    <sky-column screenSmall="5" screenLarge="3">
+      <sky-key-info [hidden]="selectedUser === undefined || selectedUser.USERSID === -1">
+        <sky-key-info-value>{{ selectedUser.NAME }} [ID#: {{ selectedUser.USERSID }}]</sky-key-info-value>
+        <sky-key-info-label>{{ selectedUser.DESCRIPTION }}</sky-key-info-label>
+      </sky-key-info>
+    </sky-column>
+
+    <sky-column screenSmall="1" screenLarge="3">
+    </sky-column>
+
+  </sky-row>
+</div>
+<br>

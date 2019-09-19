@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "AP7INVOICESID": 26275,
+        "CHECKS7ID": 34548,
+        "CheckAmount": 450,
+        "PAYMENTDATE": "2014-09-25 00:00:00.0",
+        "CheckAddedDate": "2014-09-25 15:46:21.773",
+        "INVOICEDATE": "2014-08-29 00:00:00.0",
+        "PAYEENAME": "sdenaux",
+        "InvoiceAddedByName": "jrenglish",
+        "CheckAddedByName": "sdenaux"
+    },
+    {
+        "id": 2,
+        "AP7INVOICESID": 26999,
+        "CHECKS7ID": 39999,
+        "CheckAmount": 250,
+        "PAYMENTDATE": "2014-09-25 00:00:00.0",
+        "CheckAddedDate": "2014-09-25 15:46:21.773",
+        "INVOICEDATE": "2014-08-29 00:00:00.0",
+        "PAYEENAME": "sdenaux",
+        "InvoiceAddedByName": "sdenaux",
+        "CheckAddedByName": "sdenaux"
+    }
+]

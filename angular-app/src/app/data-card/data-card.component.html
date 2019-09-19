@@ -1,0 +1,12 @@
+<sky-card size="small">
+  <sky-card-title>{{ mlalgorithm.name }}</sky-card-title>
+  <sky-card-content>
+    <span>User ID #{{ selectedUser.USERSID }}: {{ UserOutlierNumber }}</span>
+    <br />
+    <br />
+    <span>All users: {{ mlalgorithm.totalOutliers }}</span>
+    <br />
+    <br />
+    <span>{{Percentage}}% of this algorithm's total outliers come from this user.</span>
+  </sky-card-content>
+</sky-card>

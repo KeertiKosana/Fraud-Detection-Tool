@@ -1,0 +1,46 @@
+<sky-tile>
+  <sky-tile-title>{{ UseCaseName }}
+    <sky-help-inline [skyPopover]="SUCTooltipPopover" skyPopoverPlacement="above" skyPopoverTrigger="mouseenter">
+    </sky-help-inline>
+    <sky-popover #SUCTooltipPopover [popoverTitle]="UseCaseName">Testing</sky-popover>
+  </sky-tile-title>
+  <sky-tile-summary>{{ ItemNumber }} items</sky-tile-summary>
+  <sky-tile-content>
+    <sky-tile-content-section>
+      <sky-grid fit="scroll" [data]="DisplayedData" (sortFieldChange)="sortChanged($event)" [sortField]="CurSortField">
+        <sky-grid-column id="AP7INVOICESID" field="AP7INVOICESID" heading="AP7INVOICESID">
+        </sky-grid-column>
+        <sky-grid-column id="CHECKS7ID" field="CHECKS7ID" heading="CHECKS7ID">
+        </sky-grid-column>
+        <sky-grid-column id="CheckAmount" field="CheckAmount" heading="CheckAmount">
+        </sky-grid-column>
+        <sky-grid-column id="PAYMENTDATE" field="PAYMENTDATE" heading="PAYMENTDATE">
+        </sky-grid-column>
+        <sky-grid-column id="CheckAddedDate" field="CheckAddedDate" heading="CheckAddedDate">
+        </sky-grid-column>
+        <sky-grid-column id="INVOICEDATE" field="INVOICEDATE" heading="INVOICEDATE">
+        </sky-grid-column>
+        <sky-grid-column id="PAYEENAME" field="PAYEENAME" heading="PAYEENAME">
+        </sky-grid-column>
+        <sky-grid-column id="InvoiceAddedByName" field="InvoiceAddedByName" heading="InvoiceAddedByName">
+        </sky-grid-column>
+        <sky-grid-column id="CheckAddedByName" field="CheckAddedByName" heading="CheckAddedByName">
+        </sky-grid-column>
+      </sky-grid>
+      <sky-row>
+        <sky-column>
+          <sky-paging [pageSize]="ItemsPerPage" maxPages="5" [(currentPage)]="CurrentPage" [itemCount]="ItemNumber" (currentPageChange)="updateDisplayedData()">
+          </sky-paging>
+        </sky-column>
+        <sky-column>
+          <span>Total Items: {{ ItemNumber }}</span>
+          <span style="display:inline-block; width: 30px"></span>
+          <select name="select-itemsperpage" [(ngModel)]="ItemsPerPage" (ngModelChange)="updateItemsNumber()">
+            <option *ngFor="let choice of [5,10,25,50]" [ngValue]="choice">{{ choice }}</option>
+          </select>
+          <label for="select-itemsperpage" class="control-label required">Per page</label>
+        </sky-column>
+      </sky-row>
+    </sky-tile-content-section>
+  </sky-tile-content>
+</sky-tile>

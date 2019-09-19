@@ -1,0 +1,48 @@
+<sky-tile isCollapsed="true">
+  <sky-tile-title>{{ DataName }}
+    <sky-help-inline [skyPopover]="COTooltipPopover" skyPopoverPlacement="above" skyPopoverTrigger="mouseenter">
+    </sky-help-inline>
+    <sky-popover #COTooltipPopover [popoverTitle]="DataName">Testing</sky-popover>
+  </sky-tile-title>
+  <sky-tile-summary>{{ ItemNumber }} items</sky-tile-summary>
+  <sky-tile-content>
+    <sky-tile-content-section>
+      <sky-grid fit="scroll" [data]="DisplayedData" (sortFieldChange)="sortChanged($event)" [sortField]="CurSortField">
+        <sky-grid-column id="outlier" field="outlier" heading="Outlier">
+        </sky-grid-column>
+        <sky-grid-column id="AP7INVOICESID" field="AP7INVOICESID" heading="AP7INVOICESID">
+        </sky-grid-column>
+        <sky-grid-column id="CHECKS7ID" field="CHECKS7ID" heading="CHECKS7ID">
+        </sky-grid-column>
+        <sky-grid-column id="PaymentAmount" field="PaymentAmount" heading="PaymentAmount">
+        </sky-grid-column>
+        <sky-grid-column id="CheckAddedbyID" field="CheckAddedbyID" heading="CheckAddedbyID">
+        </sky-grid-column>
+        <sky-grid-column id="InvoiceAddedbyID" field="InvoiceAddedbyID" heading="InvoiceAddedbyID">
+        </sky-grid-column>
+        <sky-grid-column id="PAYMENTMETHOD" field="PAYMENTMETHOD" heading="PAYMENTMETHOD">
+        </sky-grid-column>
+        <sky-grid-column id="DeltaTime" field="DeltaTime" heading="DeltaTime">
+        </sky-grid-column>
+        <sky-grid-column id="HOD" field="HOD" heading="HOD">
+        </sky-grid-column>
+        <sky-grid-column id="DOW_str" field="DOW_str" heading="DOW_str">
+        </sky-grid-column>
+      </sky-grid>
+      <sky-row>
+        <sky-column>
+          <sky-paging [pageSize]="ItemsPerPage" maxPages="5" [(currentPage)]="CurrentPage" [itemCount]="ItemNumber" (currentPageChange)="updateDisplayedData()">
+          </sky-paging>
+        </sky-column>
+        <sky-column>
+          <span>Total Items: {{ ItemNumber }}</span>
+          <span style="display:inline-block; width: 30px"></span>
+          <select name="select-itemsperpage" [(ngModel)]="ItemsPerPage" (ngModelChange)="updateItemsNumber()">
+            <option *ngFor="let choice of [5,10,25,50]" [ngValue]="choice">{{ choice }}</option>
+          </select>
+          <label for="select-itemsperpage" class="control-label required">Per page</label>
+        </sky-column>
+      </sky-row>
+    </sky-tile-content-section>
+  </sky-tile-content>
+</sky-tile>

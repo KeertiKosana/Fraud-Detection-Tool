@@ -1,0 +1,14 @@
+<sky-row>
+  <sky-column>
+    <sky-row>
+      <sky-column>
+        <h2>Outlier summary for {{ numChecks }} checks</h2>
+      </sky-column>
+    </sky-row>
+    <sky-row>
+      <sky-column>
+        <app-data-card *ngFor="let mlalgorithm of MLAlgorithms" [mlalgorithm]="mlalgorithm"></app-data-card>
+      </sky-column>
+    </sky-row>
+  </sky-column>
+</sky-row>
